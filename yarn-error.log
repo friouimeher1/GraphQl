@@ -1,0 +1,65 @@
+Arguments: 
+  /home/meher/.nvm/versions/node/v9.7.1/bin/node /usr/share/yarn/bin/yarn.js run build
+
+PATH: 
+  /home/meher/.nvm/versions/node/v9.7.1/bin:/home/meher/bin:/home/meher/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.7.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "graphql-tutorial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "babel-watch server.js",
+      "json-server": "json-server --watch db.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "apollo-server-express": "^1.2.0",
+      "axios": "^0.17.1",
+      "babel-watch": "^2.0.7",
+      "body-parser": "^1.18.2",
+      "express": "^4.16.2",
+      "graphql": "^0.11.7",
+      "graphql-tools": "^2.8.0",
+      "json-server": "^0.12.1",
+      "mongoose": "^4.13.5"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-env": "^1.6.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c babel-watch server.js
+  Directory: /home/meher/Pictures/graphql-tutorial
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/share/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/share/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/share/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:127:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

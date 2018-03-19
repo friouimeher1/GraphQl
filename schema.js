@@ -1,6 +1,6 @@
 import {makeExecutableSchema, addMockFunctionsToSchema} from 'graphql-tools';
 import resolvers from './resolvers.js'
-const typeDefs = `type Author {
+const typeDefs = `type User {
     id: Int
     age: Int
     name: String
@@ -8,8 +8,8 @@ const typeDefs = `type Author {
     gender:String
 }
     type Query {
-        authors: [Author]
-        author(id: Int): Author
+        users: [User]
+        user(id: Int): User
     }
 `; 
 
